@@ -1,0 +1,17 @@
+{
+  "name": "whatsapp-injector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "asar": "^3.0.2",
+    "less": "^3.11.1",
+    "ncp": "^2.0.0",
+    "ps-node": "^0.1.6"
+  }
+}

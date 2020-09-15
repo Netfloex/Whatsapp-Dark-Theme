@@ -1,0 +1,45 @@
+/* Scan pagina */
+
+[class*="app-wrapper"] {
+  background-color: @background;
+}
+.landing-window {
+	background-color: @foreground;
+}
+.zCzor {
+	margin: 0 !important;
+}
+.landing-wrapper {
+  .landing-main {
+  	padding: 1rem !important;
+    // .background()
+  }
+  .landing-title {
+    color: @halfText;
+  }
+  .text-tip {
+    color: @halfText;
+  }
+  .landing-window {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: unset;
+  }
+  &:before {
+    height: 100px;
+  }
+  .landing-headerTitle {
+    font-size: 0;
+    &:after {
+      content: "Whatsapx";
+      font-size: 14px;
+    }
+  }
+  ._3B9bf,
+  ._1_ESK,
+  ._2-tpv,
+  ._1u3Tz {
+    display: none;
+  }
+}

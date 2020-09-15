@@ -1,0 +1,140 @@
+body {
+  background-color: @background!important;
+  color: @text;
+}
+[data-asset-chat-background-light] {
+  background: none!important;
+}
+// Startup
+[id*="startup"] {
+  background-color: @background!important;
+}
+progress {
+  &::-webkit-progress-bar {
+    background-color: @foreground;
+  }
+  &::-webkit-progress-value {
+    background-color: @greensea;
+  }
+}
+[data-icon="x-alt-small"] path {
+  fill: @halfText;
+}
+// Full Size
+#app .app-wrapper-web > [tabindex] {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+}
+._3Dr0Q, // Update Whatsapp butterbar
+._2xbq0 {// Tekstje make sure active internet connection als hij niet kan verbinden
+  display: none;
+}
+// Chat small
+._1xXdX {
+  flex: 77px!important;
+  transition: flex .6s;
+  &:hover,&:focus-within {
+    flex: 500px!important;
+  }
+  header .sbcXq{
+    transition: opacity 1s;
+  }
+  &:not(:hover) {
+    .ZKn2B {
+      position: absolute;
+      right: 0px;
+    }
+    header .sbcXq{
+      opacity: 0;
+    }
+  }
+  #pane-side::-webkit-scrollbar {
+    display: none;
+  }
+}
+.Wu52Z {
+    flex: 100%!important;
+}
+
+// Start pagina, intro: houd je telefoon geconnect enzo
+._2zynu {
+  &:after,._3McX8 {
+    display: none;
+  }
+  h1 {
+    & {
+      font-size: 0;
+    }
+    &:after {
+      content: "Whatsapx";
+      font-size: 36px;
+    }
+  }
+  .dPZky {
+    & {
+      font-size: 0;
+    }
+    &:after {
+      content: "Thanks for using Whatsapx.";
+      font-size: 14px;
+    }
+  }
+}
+._2UaNq { // Contact ding in de side
+  transition: background-color .2s;
+}
+[data-asset-chat-background-light] {
+  background: none;
+}
+._13mgZ {
+  background-color: var(--compose-background)!important;
+  border-color: var(--compose-background)!important;
+}
+.messageDblClick {
+  background-color: @foreground!important;
+  &Animation {
+    animation: glow 1s;
+  }
+}
+@keyframes glow {
+  0% {
+    background-color: @foreground;
+  }
+  10% {
+    background-color: lighten(@foreground, 10%);
+  }
+  100% {
+    background-color: @foreground
+  }
+}
+[data-icon*="settings-"] path {
+  fill: @text;
+}
+.tail .tail-container {
+    width: 0px !important;
+    height: 10px !important;
+    z-index: 0 !important;
+    border-top: 12px solid @foreground;
+    background: none !important;
+    top: 0px;
+}
+.message-in > .tail > .tail-container {
+    left: -10px !important;
+    border-left: 10px solid transparent;
+    border-radius: 5px 0 0 0;
+}
+.message-out > .tail > .tail-container {
+    right: -10px !important;
+    border-right: 10px solid transparent;
+    border-radius: 0 5px 0 0;
+}
+html:not(:hover):root {
+  --message-primary: transparent;
+  --secondary      : transparent;
+}
+
+html:not(:hover) img {
+  opacity: 0;
+}
